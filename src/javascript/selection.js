@@ -248,11 +248,11 @@
                 if (resultObj.haveTranslation) {
                     $resultContainer.querySelector(".title-translation").style.display = "block";
                 }
-                if (resultObj.haveWebTranslation) {
-                    temp.innerHTML += resultObj.webBlock;
-                    $resultContainer.appendChild(temp);
-                    $resultContainer.querySelector(".web-title").innerHTML = "网络释义";
-                }
+                //if (resultObj.haveWebTranslation) {
+                  //  temp.innerHTML += resultObj.webBlock;
+                    //$resultContainer.appendChild(temp);
+                    //$resultContainer.querySelector(".web-title").innerHTML = "网络释义";
+                //}
                 if(!resultObj.haveTranslation && !resultObj.haveWebTranslation) {
                     $resultContainer.innerHTML = "╮(╯▽╰)╭划词君无能为力啊<br> 还是右键问问谷歌君吧=>";
                 }
