@@ -24,12 +24,12 @@ function ChaZD(queryWord, useHttps, wordSource, sendResponse) {
 }
 function getbasicurl(useHttps, queryWord) {
     var thisurl = "";
-    var appKey = localStorage.getItem("chazduserkey");
-    var appSecret = localStorage.getItem("chazduserkeyfrom");
+    var appKey = "02820ab3303d9903";
+    var appSecret = "wuVMkLU0XIAGWwBWQMKFeISw4ZsXqFed";
     //console.log(appKey,appSecret);
-    var salt = (new Date).getTime();
-    var from = 'auto';
-    var to = 'auto';
+    var salt = (new Date()).getTime();
+    var from = "auto";
+    var to = "auto";
     var str1 = appKey + queryWord + salt + appSecret;
     var sign = md5(str1);
     if(appKey && appKey !== "" && appSecret && appSecret !== "") {

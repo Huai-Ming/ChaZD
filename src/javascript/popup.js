@@ -28,9 +28,9 @@ function queryInPopup(queryText) {
             chrome.extension.sendMessage({queryWord: str, source: "popup", useHttps: useHttpsValue}, buildResult);
         }
     } else {
-        var str = trim($input.value);
-        if(str !== "") {
-            chrome.extension.sendMessage({queryWord: str, source: "popup", useHttps: useHttpsValue}, buildResult);
+        var str1 = trim($input.value);
+        if(str1 !== "") {
+            chrome.extension.sendMessage({queryWord: str1, source: "popup", useHttps: useHttpsValue}, buildResult);
         }
     }
 }
