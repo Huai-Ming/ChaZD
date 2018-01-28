@@ -24,8 +24,8 @@ function ChaZD(queryWord, useHttps, wordSource, sendResponse) {
 }
 function getbasicurl(useHttps, queryWord) {
     var thisurl = "";
-    var appKey = "02820ab3303d9903";
-    var appSecret = "wuVMkLU0XIAGWwBWQMKFeISw4ZsXqFed";
+    var appKey = "0282240ab33034d9903";
+    var appSecret = "wuVMkLU0XIAGMWwXB3WQMKFeISw4ZsXqFed";
     //console.log(appKey,appSecret);
     var salt = (new Date()).getTime();
     var from = "auto";
